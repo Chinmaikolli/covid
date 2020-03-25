@@ -171,8 +171,8 @@ from keras.layers import LeakyReLU
 
 model = Sequential()
 
-model.add(Dense(64, input_shape=(24,)))
-model.add(Dense(32)) 
+
+model.add(Dense(32, input_shape=(24,))) 
 model.add(LeakyReLU(alpha=0.005))
 model.add(Dense(16))
 model.add(Dense(8))
